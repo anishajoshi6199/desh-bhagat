@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/*  navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLogo1 > img {
+  width: 18rem;
+  padding-left: 15px;
+}
+.navLogo2 > img {
+  width: 10rem;
+}
+
+/* hero */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 4, 0.75), rgba(0, 0, 4, 0.75)),
+    url("./images/unsplash1.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.headerTxt > h1 {
+  color: rgb(2, 127, 253);
+  font-size: 4.5rem;
+  font-weight: 650;
+  text-shadow: 2px 2px 2px black;
+}
+
+.headerTxt > p {
+  color: skyblue;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+.headerFrom > h1 {
+  color: skyblue;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 600;
+  padding-top: 4rem;
+  font-size: 3rem;
+}
+
+/* Innovation */
+.Innovation {
+  background-color: navy;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+.InnovateTxt > h1 {
+  font-size: 3rem;
+}
+.InnovateTxt > p {
+  font-size: 1.2rem;
+}
+.InnovateTxt > h2 {
+  font-size: 3.5rem;
+}
+/* campus */
+.campus {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+.campusImg > img {
+  width: 58rem;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  border: 3px solid black;
+}
+.campus_Img {
+  position: absolute;
+  left: 50rem;
+}
+.campus_Img > h2 {
+  text-align: right;
+  font-size: 2.2rem;
+  color: #000;
+}
+.campus_Img > p {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #000;
+}
+.campus_Img > img {
+  border: 3px solid black;
+  border-radius: 2rem;
+  transition: 1s ease;
+}
+
+.campus_Img > img:hover {
+  -webkit-filter: blur(3px);
+  transition: 1s ease;
+}
+
+/* PLACEMENT */
+.pleasure {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  justify-content: space-around;
+  padding: 4rem;
+  background-color: navy;
+}
+.pleasureTxt {
+  color: #fff;
+  padding: 4rem;
+}
+.pleasureTxt > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.pleasureTxt > p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+#dbu_1 {
+  width: 33rem;
+  border: 2px solid #000;
+  border-radius: 1rem;
+}
+
+/* course */
+#course {
+  margin-top: 5rem;
+}
+
+/*------ buttom ------*/
+.button {
+  border: 1.9px solid black;
+  background-color: red;
+  border-radius: 4rem;
+  padding: 5px;
+  width: 8rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.button > a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+/*============= footer  ==============*/
+
+.foot {
+  display: flex;
+  background-color: black;
+  color: #fff;
+  flex-wrap: wrap;
+  padding: 5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footItem-1 > h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+.footItem-1 > ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footItem-1 > ul > li {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
+  color: #bbb;
+  transition: all 0.3s ease;
+  list-style: none;
+}
+
+.footItem-1 > ul > li:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footTxt {
+  background-color: black;
+  color: #fff;
+}
+
+.footTxt > h4 {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+/* ============================= */
+/*========= RESPONSIVE ==========*/
+/* ============================= */
+
+@media screen and (max-width: 1024px) {
+  /* navbar */
+  .navLogo1 > img {
+    padding-left: 2rem;
+  }
+  .navLogo2 > img {
+    padding-right: 2rem;
+  }
+  /* hero */
+  .headerTxt > h1 {
+    font-size: 3.6rem;
+  }
+  .headerTxt > p {
+    font-size: 2rem;
+  }
+  .headerFrom > h1 {
+    font-size: 2rem;
+  }
+
+  /* InnovateTxt */
+  .InnovateTxt > h1 {
+    font-size: 2rem;
+  }
+  .InnovateTxt > p {
+    font-size: 0.8rem;
+  }
+  .InnovateTxt > h2 {
+    font-size: 2.5rem;
+  }
+  /* campus */
+  .campusImg {
+    display: none;
+  }
+  .campus_Img {
+    display: none;
+  }
+  /* PLACEMENT */
+  #dbu_1 {
+    width: 25rem;
+  }
+  .pleasureTxt > h1 {
+    font-size: 2rem;
+  }
+  .pleasureTxt > p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* hero */
+  .headerTxt > h1 {
+    font-size: 2.8rem;
+    padding-left: 2rem;
+  }
+  .headerTxt > p {
+    padding-left: 2rem;
+    font-size: 1.7rem;
+  }
+  .headerFrom > h1 {
+    font-size: 2.5rem;
+  }
+  /* Innovation */
+  .InnovateTxt > h1 {
+    font-size: 1.5rem;
+  }
+  .InnovateTxt > p {
+    font-size: 0.6rem;
+  }
+  .InnovateTxt > h2 {
+    font-size: 2rem;
+  }
+  /* PLACEMENT */
+  #dbu_1 {
+    width: 20rem;
+  }
+  .pleasure {
+    padding: 1rem;
+  }
+  .pleasureTxt > h1 {
+    font-size: 2rem;
+  }
+  .pleasureTxt > p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* navbar */
+  .navLogo1 > img {
+    padding-left: 1rem;
+    width: 10rem;
+  }
+  .navLogo2 > img {
+    padding-right: 1rem;
+    width: 8rem;
+  }
+  /* hero */
+  .header {
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+  .headerTxt > h1 {
+    font-size: 3.9rem;
+  }
+  .headerTxt > p {
+    font-size: 2rem;
+  }
+  .headerFrom > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* InnovateTxt */
+  .Innovation {
+    flex-direction: column;
+  }
+  .InnovateTxt > h1 {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  .InnovateTxt > p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .InnovateTxt > h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  /* PLACEMENT */
+  .pleasure {
+    margin-top: 1rem;
+    flex-direction: column;
+    padding: 1px;
+  }
+  #dbu_1 {
+    width: 25rem;
+  }
+  .pleasureTxt > h1 {
+    font-size: 2.8rem;
+  }
+  .pleasureTxt > p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* navbar */
+  .navLogo1 > img {
+    padding-left: 10px;
+    width: 9rem;
+  }
+  .navLogo2 > img {
+    padding-right: 10px;
+    width: 7rem;
+  }
+  /* hero */
+  .headerTxt > h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .headerTxt > p {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .headerFrom > h1 {
+    font-size: 1.7rem;
+  }
+  .headerFrom > iframe {
+    width: 300px;
+  }
+
+  /* InnovateTxt */
+  .InnovateTxt > h1 {
+    font-size: 2rem;
+  }
+  .InnovateTxt > p {
+    font-size: 0.8rem;
+  }
+  .InnovateTxt > h2 {
+    font-size: 3rem;
+  }
+  /* PLACEMENT */
+  #dbu_1 {
+    width: 18rem;
+  }
+  .pleasureTxt > h1 {
+    font-size: 2.3rem;
+  }
+  .pleasureTxt > p {
+    font-size: 0.9rem;
+  }
+  .footItem-1 > h3 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .footItem-1 > ul > li {
+    font-size: 1rem;
+  }
+  .footTxt > h4 {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+}
